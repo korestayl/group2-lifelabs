@@ -1,0 +1,126 @@
+@font-face {
+    src: url(fonts/Agrandir-GrandHeavy.ttf);
+    font-family:'agrandir';
+}
+    @font-face {
+        src: url(fonts/Kollektif.ttf);
+        font-family:'kollektif';
+    }
+    @font-face {
+        font-family:'swiss';
+        src: url(fonts/Swiss\ 911\ Compressed\ Regular.ttf);
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'swiss';
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
+        
+    
+    body {
+        background: #121213;
+        color:#b4aa96;
+     
+        
+    }
+    #header{
+        width: 100%;
+        height: 80vh;
+        background-color: #121213;
+        background-size: cover ;
+        background-position: center;
+      
+    
+    }
+    .container{
+        padding: 10px 10%;
+    
+    
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 140px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        color: #b4aa96;
+        text-decoration:none;
+        font-size: 18px;
+        font-family:'agrandir';
+        position: relative;
+    }
+    
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #586253;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    
+    .header-text{
+        margin-top: 15%;
+        font-size: 30px;
+        color: #b4aa96;
+    
+    }
+    .header-text p{
+        font-family: "agrandir";
+       
+    }
+    .header-text p span{
+        font-family: "agrandir";
+        color: #586253;
+    }
+    .header-text h1{
+        font-size: 100px;
+        margin-top: 30px;
+    }
+    .header-text h1 span{
+        color: #586253;
+    }
+
+    /* --------------border----------- */
+#border{
+    width: 100%;
+    height: 50vh;
+    background-color: #121213;
+    background-size: cover ;
+    background-position: center;
+    padding: 50px;
+    }
+    
+    .text p{
+        text-align: end;
+        font-size: 40px;
+        color: #586253;
+       text-decoration: none;
+    }
+    
+    .text a{
+        text-decoration: none;
+    }
+    .text p:hover{
+        color: #b4aa96;
+    }
